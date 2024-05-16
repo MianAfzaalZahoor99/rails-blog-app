@@ -1,0 +1,71 @@
+.articles-list-main-container {
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  align-items: center;
+  font-family: 'Inter';
+  .main-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .top-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .titles-count {
+      float: left;
+      font-size: 16px;
+      text-align: left;
+      font-weight: 400;
+    }
+    .new-article-button {
+      background-color: #1EAE63;
+      font-size: 16px;
+      border-radius: 8px;
+      padding: 12px 8px;
+      border: 1px solid #EDEDED;
+    }
+  }
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    .single-article-container {
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 3px 3px 8px 2px #EDEDED;
+      display: flex;
+      width: 350px;
+      gap: 12px;
+      flex-direction: column;
+      .article-top-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .title {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 500;
+        }
+        .status {
+          font-weight: bold;
+          font-size: 14px;
+          color: #333;
+          width: fit-content;
+          background-color: #f0f0f0;
+          border: 1px solid #d0d0d0;
+          padding: 2px 4px;
+          border-radius: 4px;
+        }
+      }
+      .body {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}

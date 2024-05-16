@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag 'articles', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="articles-list-main-container">
+  <span class="main-title">Articles</span>
+  <div class="top-container">
+    <span class="titles-count">Our blog has <b><%= Article.public_count %></b> pubilc articles and counting!</span>
+    <%= link_to "New Article", new_article_path, class: "new-article-button" %>
+  </div>
+  <div class="articles">
+    <% @articles.each do |article| %>
+      <div class="single-article-container">
+        <div class="article-top-bar">
+          <span class="title"><%= article.title %></span>
+          <span class="status"><%= article.status.capitalize %></span>
+        </div>
+        <span class="body"><%= article.body %></span>
+        <%= link_to "-> Open Article", article %>
+      </div>
+    <% end %>
+  </div>
+</div>
