@@ -1,6 +1,6 @@
 # Rails Blog App
 
-Welcome to our Rails Blog Application This project is a simple yet powerful blogging platform built with Ruby on Rails. It's designed to showcase the capabilities of Rails while providing a robust foundation for building scalable web applications.
+Welcome to our Rails Blog App This project is a simple yet powerful blogging platform built with Ruby on Rails. It's designed to showcase the capabilities of Rails while providing a robust foundation for building scalable web applications.
 
 ## Features
 
